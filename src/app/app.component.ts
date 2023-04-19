@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { movieArr } from './const/moviearr';
+import { Imoviearr } from './model/data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  imgBaseurl=`https://image.tmdb.org/t/p/w1280/`;
+  searchByValue!:string;
   title = 'imdbmoviestask';
+  moviearry:Imoviearr[]=movieArr
 }
